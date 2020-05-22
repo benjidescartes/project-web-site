@@ -4,26 +4,65 @@ nav.menu-nav ul li.btn{
 	display: inline-block;
 }
 nav.menu-nav ul li.btn a{
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 nav.menu-nav ul li.btn:hover a{
-	background-color: black;
+	background-color: #00fffb;
 	color:white;
 	transition: 2s all;
 }
 div#block_a div,div#block_b div{
+	border-radius: 10px;
 	display: inline-block;
-	width: 48%;
-	background-color:cyan;
-	margin: 5px;
+	width: 22%;
+	margin: 17px;
 	position: center;
 }
+div#block_a a,div#block_b a{
+	#le bouton
+	display: inline-block;
+	width: 120px;
+	padding: 10px;
+	background-color:white ;
+	color: #667eea;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	margin: 10px;
+}
+a:before,a:after{
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 3px;
+	background-color: inherit;
+}
+a:before{
+	left: 0;
+	top:-5px;
+}
+a:after{
+	right:0;
+	bottom: -5px;
+}
+a:hover:before,a:hover:after{
+	transition: 0.5s all;
+	width: 100%;
+}
+
 header img{
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	max-width: 100%;
 	height: auto;
 }
-
-
+body {
+background-image: url("../img/fond_ecran.png");
+}
+footer{
+	color: white;
+}
+div#devis,div#notre_societe{
+	color: white;
+}
